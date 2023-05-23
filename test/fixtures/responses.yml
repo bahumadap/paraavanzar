@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  resolution_key: MyString
+  res_description: MyText
+  r_scale: MyString
+  feedback: MyText
+  acceptance_state: false
+  response_date: 2023-05-23
+  requesting_user: one
+  executive: one
+  ticket: one
+
+two:
+  resolution_key: MyString
+  res_description: MyText
+  r_scale: MyString
+  feedback: MyText
+  acceptance_state: false
+  response_date: 2023-05-23
+  requesting_user: two
+  executive: two
+  ticket: two

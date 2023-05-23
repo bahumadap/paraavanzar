@@ -1,0 +1,62 @@
+<%= form_with(model: response) do |form| %>
+  <% if response.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(response.errors.count, "error") %> prohibited this response from being saved:</h2>
+
+      <ul>
+        <% response.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :resolution_key, style: "display: block" %>
+    <%= form.text_field :resolution_key %>
+  </div>
+
+  <div>
+    <%= form.label :res_description, style: "display: block" %>
+    <%= form.text_area :res_description %>
+  </div>
+
+  <div>
+    <%= form.label :r_scale, style: "display: block" %>
+    <%= form.text_field :r_scale %>
+  </div>
+
+  <div>
+    <%= form.label :feedback, style: "display: block" %>
+    <%= form.text_area :feedback %>
+  </div>
+
+  <div>
+    <%= form.label :acceptance_state, style: "display: block" %>
+    <%= form.check_box :acceptance_state %>
+  </div>
+
+  <div>
+    <%= form.label :response_date, style: "display: block" %>
+    <%= form.date_field :response_date %>
+  </div>
+
+  <div>
+    <%= form.label :requesting_user_id, style: "display: block" %>
+    <%= form.text_field :requesting_user_id %>
+  </div>
+
+  <div>
+    <%= form.label :executive_id, style: "display: block" %>
+    <%= form.text_field :executive_id %>
+  </div>
+
+  <div>
+    <%= form.label :ticket_id, style: "display: block" %>
+    <%= form.text_field :ticket_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

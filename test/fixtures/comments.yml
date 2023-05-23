@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  ticket: one
+  supervisor: one
+  administrator: one
+  executive: one
+
+two:
+  content: MyText
+  ticket: two
+  supervisor: two
+  administrator: two
+  executive: two

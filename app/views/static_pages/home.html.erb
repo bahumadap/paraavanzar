@@ -1,0 +1,27 @@
+<h1>Welcome to the Home Page</h1>
+
+<% if current_user %>
+  <p>Welcome, <%= current_user.name %>!</p>
+<% else %>
+  <p>Welcome, guest!</p>
+<% end %>
+
+<% if current_user && current_user.administrator? %>
+  <p>You are logged in as an administrator.</p>
+  <p><%= link_to 'Create Report', new_report_path %></p>
+<% end %>
+
+<% if current_user && current_user.supervisor? %>
+  <p>You are logged in as a supervisor.</p>
+  <p><%= link_to 'Create Report', new_report_path %></p>
+<% end %>
+
+<% if current_user && current_user.executive? %>
+  <p>You are logged in as an executive.</p>
+  <p><%= link_to 'Create Response', new_response_path %></p>
+<% end %>
+
+<% if current_user && current_user.requesting_user? %>
+  <p>You are logged in as a requesting user.</p>
+  <p><%= link_to 'Create Ticket', new_ticket_path %></p>
+<% end %>

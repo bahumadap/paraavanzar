@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Requesting users</h1>
+
+<div id="requesting_users">
+  <% @requesting_users.each do |requesting_user| %>
+    <%= render requesting_user %>
+    <p>
+      <%= link_to "Show this requesting user", requesting_user %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New requesting user", new_requesting_user_path %>

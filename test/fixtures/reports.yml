@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number_tickets: 1
+  tickets_closed: 1
+  tickets_open: 1
+  rating_mean: 1
+  administrator: one
+  supervisor: one
+
+two:
+  number_tickets: 1
+  tickets_closed: 1
+  tickets_open: 1
+  rating_mean: 1
+  administrator: two
+  supervisor: two
